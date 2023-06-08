@@ -1,0 +1,17 @@
+/* 컬러를 변수로 지정해서 관리하기 */
+:root {
+  --main-color: rgb(98, 220, 147);
+  /* --sub-color: rgb(100, 100, 100); */
+  --sub-color: #ebebeb;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-color);
+}
+section {
+  width: 100px;
+  height: 100px;
+  background-color: var(--sub-color);
+}
