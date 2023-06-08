@@ -8,6 +8,7 @@ main {
   align-items: center;
   border-bottom: 1px solid#ededef;
   padding: 20px 0;
+  margin-left: -40px;
 }
 .item-list__img {
   display: flex;
