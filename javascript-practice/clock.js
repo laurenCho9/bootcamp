@@ -1,9 +1,10 @@
-function sayHello() {
-  console.log("안녕하세요");
+function setTime() {
+  const time = new Date();
+  const 분 = time.getMinutes().toString();
+  const 초 = time.getSeconds().toString();
+  const timeH1 = document.querySelector(".time");
+  timeH1.innerText = `${분.padStart(2, "0")}:${초.padStart(2, "0")}`;
 }
 
-// 1회성: 1초뒤 한번 호출
-// setTimeout(sayHello, 1000);
-
-// 주기성: 1초단위로 계속해서 호출
-setInterval(sayHello, 1000);
+// 주기성
+setInterval(setTime, 1000);
